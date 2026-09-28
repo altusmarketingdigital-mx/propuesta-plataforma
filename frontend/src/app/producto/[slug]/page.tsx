@@ -19,10 +19,10 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           
           {/* Galería de Imágenes (Lado Izquierdo) */}
           <div className="w-full md:w-3/5 grid grid-cols-2 gap-4">
-            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://images.unsplash.com/photo-1622279457486-62dcc4a631d6?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover" alt="Detalle 1" /></div>
-            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover" alt="Detalle 2" /></div>
-            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://images.unsplash.com/photo-1622158872594-e0691ab1a129?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover" alt="Detalle 3" /></div>
-            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://images.unsplash.com/photo-1593344686252-c07a3c306660?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover" alt="Detalle 4" /></div>
+            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://loremflickr.com/800/1000/tennis,clothing/all?random=1" className="w-full h-full object-cover" alt="Detalle 1" /></div>
+            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://loremflickr.com/800/1000/tennis,clothing/all?random=2" className="w-full h-full object-cover" alt="Detalle 2" /></div>
+            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://loremflickr.com/800/1000/tennis,clothing/all?random=3" className="w-full h-full object-cover" alt="Detalle 3" /></div>
+            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://loremflickr.com/800/1000/tennis,clothing/all?random=4" className="w-full h-full object-cover" alt="Detalle 4" /></div>
           </div>
 
           {/* Información y Selector (Lado Derecho) */}

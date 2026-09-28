@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 // Mock de productos para el diseño
 const MOCK_PRODUCTS = [
-  { id: 1, name: 'Falda Padel Pro Blanca', price: 950, slug: 'falda-pro-blanca', img: 'https://images.unsplash.com/photo-1622279457486-62dcc4a631d6?q=80&w=800&auto=format&fit=crop' },
-  { id: 2, name: 'Falda Plisada Carbón', price: 1100, slug: 'falda-plisada-carbon', img: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=800&auto=format&fit=crop' },
-  { id: 3, name: 'Top Deportivo Menta', price: 750, slug: 'top-menta', img: 'https://images.unsplash.com/photo-1622158872594-e0691ab1a129?q=80&w=800&auto=format&fit=crop' },
-  { id: 4, name: 'Falda Clásica Negra', price: 890, slug: 'falda-clasica-negra', img: 'https://images.unsplash.com/photo-1593344686252-c07a3c306660?q=80&w=800&auto=format&fit=crop' },
+  { id: 1, name: 'Falda Padel Pro Blanca', price: 950, slug: 'falda-pro-blanca', img: 'https://loremflickr.com/800/1000/tennis,skirt/all' },
+  { id: 2, name: 'Falda Plisada Carbón', price: 1100, slug: 'falda-plisada-carbon', img: 'https://loremflickr.com/800/1000/sports,skirt/all' },
+  { id: 3, name: 'Top Deportivo Menta', price: 750, slug: 'top-menta', img: 'https://loremflickr.com/800/1000/fitness,top/all' },
+  { id: 4, name: 'Falda Clásica Negra', price: 890, slug: 'falda-clasica-negra', img: 'https://loremflickr.com/800/1000/padel,woman/all' },
 ];
 
 export default function CategoryPage({ params }: { params: { category: string } }) {

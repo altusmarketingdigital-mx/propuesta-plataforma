@@ -9,8 +9,7 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="relative h-[80vh] w-full bg-brand-cream flex items-center justify-center">
-        {/* Foto de fondo (Unsplash: mujer jugando tenis/padel) */}
-        <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a631d6?q=80&w=2070&auto=format&fit=crop" alt="Hero Padel" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="https://loremflickr.com/1920/1080/tennis,woman/all" alt="Hero Padel" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-brand-carbon/40"></div> 
         
         <div className="relative z-10 text-center px-4">
@@ -35,28 +34,28 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Faldas */}
           <Link href="/coleccion/faldas" className="group block relative h-80 overflow-hidden">
-             <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a631d6?q=80&w=800&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Faldas" />
+             <img src="https://loremflickr.com/800/800/skirt,sport/all" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Faldas" />
              <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
                <h3 className="text-white text-xl font-bold uppercase tracking-wide group-hover:text-brand-accent transition-colors">Faldas</h3>
              </div>
           </Link>
           {/* Tops */}
           <Link href="/coleccion/playeras" className="group block relative h-80 overflow-hidden">
-             <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=800&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Tops" />
+             <img src="https://loremflickr.com/800/800/fitness,woman/all" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Tops" />
              <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
                <h3 className="text-white text-xl font-bold uppercase tracking-wide group-hover:text-brand-accent transition-colors">Tops & Playeras</h3>
              </div>
           </Link>
           {/* Vestidos */}
           <Link href="/coleccion/vestidos" className="group block relative h-80 overflow-hidden">
-             <img src="https://images.unsplash.com/photo-1622158872594-e0691ab1a129?q=80&w=800&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Vestidos" />
+             <img src="https://loremflickr.com/800/800/tennis,dress/all" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Vestidos" />
              <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
                <h3 className="text-white text-xl font-bold uppercase tracking-wide group-hover:text-brand-accent transition-colors">Vestidos</h3>
              </div>
           </Link>
           {/* Accesorios */}
           <Link href="/coleccion/accesorios" className="group block relative h-80 overflow-hidden">
-             <img src="https://images.unsplash.com/photo-1593344686252-c07a3c306660?q=80&w=800&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Paleteros" />
+             <img src="https://loremflickr.com/800/800/sports,bag/all" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Paleteros" />
              <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
                <h3 className="text-white text-xl font-bold uppercase tracking-wide group-hover:text-brand-accent transition-colors">Accesorios</h3>
              </div>
