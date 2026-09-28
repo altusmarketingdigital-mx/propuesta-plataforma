@@ -21,8 +21,8 @@ Este plan de trabajo detalla las fases para construir una plataforma de e-commer
 ## Fase 2: Desarrollo Backend y Backoffice (Semanas 4-7)
 *   [x] **Autenticación y Seguridad:** JWT (JSON Web Tokens) para usuarios y administradores. Encriptación de contraseñas.
 *   [x] **Módulo de Catálogo:** APIs para crear, leer, actualizar y borrar (CRUD) productos, categorías, tallas y colores.
-*   [ ] **Gestión de Inventario:** Lógica para descontar stock en tiempo real y prevenir sobreventas. (Se conecta junto al checkout).
-*   [ ] **Desarrollo del Panel Admin:** Interfaz visual para que el equipo pueda subir productos y ver pedidos sin tocar código.
+*   [x] **Gestión de Inventario:** Lógica para descontar stock en tiempo real y prevenir sobreventas. (Se conecta junto al checkout).
+*   [x] **Desarrollo del Panel Admin:** Interfaz visual para que el equipo pueda subir productos y ver pedidos sin tocar código.
 
 ## Fase 3: Desarrollo Frontend (Tienda Pública) (Semanas 6-10)
 *   [ ] **Maquetación UI:** Implementación de Tailwind CSS basada en el diseño de Figma.
