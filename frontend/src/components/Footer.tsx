@@ -58,6 +58,8 @@ export default function Footer() {
           <div className="flex space-x-4 mt-4 md:mt-0 text-xs text-gray-500">
             <Link href="/privacidad" className="hover:text-brand-white">Aviso de Privacidad</Link>
             <Link href="/terminos" className="hover:text-brand-white">Términos del Servicio</Link>
+            <span className="text-gray-700">|</span>
+            <Link href="/admin/login" className="hover:text-brand-accent text-brand-accent transition-colors font-semibold">Acceso Backoffice</Link>
           </div>
         </div>
       </div>
