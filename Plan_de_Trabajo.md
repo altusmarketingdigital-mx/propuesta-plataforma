@@ -25,9 +25,9 @@ Este plan de trabajo detalla las fases para construir una plataforma de e-commer
 *   [x] **Desarrollo del Panel Admin:** Interfaz visual para que el equipo pueda subir productos y ver pedidos sin tocar código.
 
 ## Fase 3: Desarrollo Frontend (Tienda Pública) (Semanas 6-10)
-*   [ ] **Maquetación UI:** Implementación de Tailwind CSS basada en el diseño de Figma.
+*   [x] **Maquetación UI:** Implementación de Tailwind CSS basada en el diseño de Figma.
 *   [ ] **Catálogo y Filtros:** Conexión de la página de inicio, listado de productos y filtros dinámicos (talla, precio).
-*   [ ] **Ficha de Producto (PDP):** Visualización de galería de fotos, selección de variantes y validación de stock disponible.
+*   [x] **Ficha de Producto (PDP):** Visualización de galería de fotos, selección de variantes y validación de stock disponible.
 *   [x] **Carrito de Compras:** Lógica de almacenamiento local/sesión para productos en el carrito.
 *   [ ] **Optimización Core Web Vitals:** Ajustes de velocidad de carga y SEO técnico (Server-Side Rendering con Next.js).
 
