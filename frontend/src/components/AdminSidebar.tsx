@@ -36,15 +36,15 @@ export default function AdminSidebar() {
           </Link>
           <div className="flex flex-col pl-14 py-1 space-y-3 text-sm">
             <Link href="/admin/productos" className={isActive('/admin/productos') && !isActive('/admin/categorias') ? 'font-bold' : 'hover:text-blue-800'}>Lista de productos</Link>
-            <Link href="#" className="hover:text-blue-800">Inventario</Link>
-            <Link href="#" className="hover:text-blue-800">Transferencias</Link>
+            <Link href="/admin/inventario" className={isActive('/admin/inventario') ? 'font-bold' : 'hover:text-blue-800'}>Inventario</Link>
+            <Link href="/admin/transferencias" className={isActive('/admin/transferencias') ? 'font-bold' : 'hover:text-blue-800'}>Transferencias</Link>
             <Link href="/admin/categorias" className={isActive('/admin/categorias') ? 'font-bold' : 'hover:text-blue-800'}>Categorías</Link>
-            <Link href="#" className="hover:text-blue-800 flex justify-between pr-4">Suscripciones <span className="border border-blue-300 text-blue-600 text-[10px] px-1.5 rounded-full">Nuevo</span></Link>
-            <Link href="#" className="hover:text-blue-800 flex justify-between pr-4">Tablas de precios <span className="border border-blue-300 text-blue-600 text-[10px] px-1.5 rounded-full">Nuevo</span></Link>
+            <Link href="/admin/suscripciones" className={`flex justify-between pr-4 ${isActive('/admin/suscripciones') ? 'font-bold' : 'hover:text-blue-800'}`}>Suscripciones <span className="border border-blue-300 text-blue-600 text-[10px] px-1.5 rounded-full">Nuevo</span></Link>
+            <Link href="/admin/precios" className={`flex justify-between pr-4 ${isActive('/admin/precios') ? 'font-bold' : 'hover:text-blue-800'}`}>Tablas de precios <span className="border border-blue-300 text-blue-600 text-[10px] px-1.5 rounded-full">Nuevo</span></Link>
           </div>
         </div>
 
-        <Link href="#" className="flex items-center justify-between px-6 py-2.5 hover:bg-gray-50 mt-2">
+        <Link href="/admin/logistica" className={`flex items-center justify-between px-6 py-2.5 hover:bg-gray-50 mt-2 ${isActive('/admin/logistica') ? 'bg-blue-50 text-blue-700' : ''}`}>
           <div className="flex items-center"><span className="mr-3">🚚</span> Logística y Envíos</div>
           <span className="border border-blue-300 text-blue-600 text-[10px] px-1.5 rounded-full font-bold">Nuevo</span>
         </Link>
