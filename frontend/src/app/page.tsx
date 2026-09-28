@@ -9,7 +9,7 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="relative h-[80vh] w-full bg-brand-cream flex items-center justify-center">
-        <img src="https://loremflickr.com/1920/1080/tennis,woman/all" alt="Hero Padel" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="https://picsum.photos/id/1058/1920/1080" alt="Hero Padel" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-brand-carbon/40"></div> 
         
         <div className="relative z-10 text-center px-4">
@@ -34,28 +34,28 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Faldas */}
           <Link href="/coleccion/faldas" className="group block relative h-80 overflow-hidden">
-             <img src="https://loremflickr.com/800/800/skirt,sport/all" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Faldas" />
+             <img src="https://picsum.photos/id/1011/800/800" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Faldas" />
              <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
                <h3 className="text-white text-xl font-bold uppercase tracking-wide group-hover:text-brand-accent transition-colors">Faldas</h3>
              </div>
           </Link>
           {/* Tops */}
           <Link href="/coleccion/playeras" className="group block relative h-80 overflow-hidden">
-             <img src="https://loremflickr.com/800/800/fitness,woman/all" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Tops" />
+             <img src="https://picsum.photos/id/1050/800/800" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Tops" />
              <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
                <h3 className="text-white text-xl font-bold uppercase tracking-wide group-hover:text-brand-accent transition-colors">Tops & Playeras</h3>
              </div>
           </Link>
           {/* Vestidos */}
           <Link href="/coleccion/vestidos" className="group block relative h-80 overflow-hidden">
-             <img src="https://loremflickr.com/800/800/tennis,dress/all" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Vestidos" />
+             <img src="https://picsum.photos/id/1012/800/800" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Vestidos" />
              <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
                <h3 className="text-white text-xl font-bold uppercase tracking-wide group-hover:text-brand-accent transition-colors">Vestidos</h3>
              </div>
           </Link>
           {/* Accesorios */}
           <Link href="/coleccion/accesorios" className="group block relative h-80 overflow-hidden">
-             <img src="https://loremflickr.com/800/800/sports,bag/all" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Paleteros" />
+             <img src="https://picsum.photos/id/1059/800/800" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Paleteros" />
              <div className="absolute inset-0 flex items-end p-6 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
                <h3 className="text-white text-xl font-bold uppercase tracking-wide group-hover:text-brand-accent transition-colors">Accesorios</h3>
              </div>

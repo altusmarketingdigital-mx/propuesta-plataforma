@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 // Mock de productos para el diseño
 const MOCK_PRODUCTS = [
-  { id: 1, name: 'Falda Padel Pro Blanca', price: 950, slug: 'falda-pro-blanca', img: 'https://loremflickr.com/800/1000/tennis,skirt/all' },
-  { id: 2, name: 'Falda Plisada Carbón', price: 1100, slug: 'falda-plisada-carbon', img: 'https://loremflickr.com/800/1000/sports,skirt/all' },
-  { id: 3, name: 'Top Deportivo Menta', price: 750, slug: 'top-menta', img: 'https://loremflickr.com/800/1000/fitness,top/all' },
-  { id: 4, name: 'Falda Clásica Negra', price: 890, slug: 'falda-clasica-negra', img: 'https://loremflickr.com/800/1000/padel,woman/all' },
+  { id: 1, name: 'Falda Padel Pro Blanca', price: 950, slug: 'falda-pro-blanca', img: 'https://picsum.photos/id/1011/800/1000' },
+  { id: 2, name: 'Falda Plisada Carbón', price: 1100, slug: 'falda-plisada-carbon', img: 'https://picsum.photos/id/1050/800/1000' },
+  { id: 3, name: 'Top Deportivo Menta', price: 750, slug: 'top-menta', img: 'https://picsum.photos/id/1012/800/1000' },
+  { id: 4, name: 'Falda Clásica Negra', price: 890, slug: 'falda-clasica-negra', img: 'https://picsum.photos/id/1059/800/1000' },
 ];
 
 export default function CategoryPage({ params }: { params: { category: string } }) {

@@ -19,10 +19,10 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
           
           {/* Galería de Imágenes (Lado Izquierdo) */}
           <div className="w-full md:w-3/5 grid grid-cols-2 gap-4">
-            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://loremflickr.com/800/1000/tennis,clothing/all?random=1" className="w-full h-full object-cover" alt="Detalle 1" /></div>
-            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://loremflickr.com/800/1000/tennis,clothing/all?random=2" className="w-full h-full object-cover" alt="Detalle 2" /></div>
-            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://loremflickr.com/800/1000/tennis,clothing/all?random=3" className="w-full h-full object-cover" alt="Detalle 3" /></div>
-            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://loremflickr.com/800/1000/tennis,clothing/all?random=4" className="w-full h-full object-cover" alt="Detalle 4" /></div>
+            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://picsum.photos/id/1011/800/1000" className="w-full h-full object-cover" alt="Detalle 1" /></div>
+            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://picsum.photos/id/1050/800/1000" className="w-full h-full object-cover" alt="Detalle 2" /></div>
+            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://picsum.photos/id/1012/800/1000" className="w-full h-full object-cover" alt="Detalle 3" /></div>
+            <div className="aspect-[3/4] bg-gray-200 overflow-hidden"><img src="https://picsum.photos/id/1059/800/1000" className="w-full h-full object-cover" alt="Detalle 4" /></div>
           </div>
 
           {/* Información y Selector (Lado Derecho) */}
