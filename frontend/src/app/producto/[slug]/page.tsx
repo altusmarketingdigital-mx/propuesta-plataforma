@@ -28,8 +28,27 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
     setTimeout(() => setIsAdded(false), 2000);
   };
 
+  // SEO: Datos estructurados JSON-LD para Google (Rich Snippets)
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: productName,
+    image: 'https://picsum.photos/id/1011/800/1000',
+    description: 'Falda pantalón diseñada con tecnología transpirable. Su pretina alta garantiza soporte y comodidad en cada movimiento.',
+    offers: {
+      '@type': 'Offer',
+      price: price,
+      priceCurrency: 'MXN',
+      availability: 'https://schema.org/InStock',
+    }
+  };
+
   return (
     <main className="min-h-screen flex flex-col bg-brand-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navbar />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
