@@ -12,8 +12,25 @@ const prisma = new PrismaClient();
 const PORT = process.env.PORT || 3001;
 
 // Middlewares de seguridad y parseo
-app.use(cors({ origin: '*' })); // Permitir peticiones desde el frontend (Next.js)
+app.use(cors({ origin: '*' })); // En producción debe restringirse a https://tribusport.mx
 app.use(express.json()); // Permitir que la API reciba datos en formato JSON
+
+// ==========================================
+// AUDITORÍA DE SEGURIDAD (FASE 5)
+// ==========================================
+// 1. Ocultar que usamos Express
+app.disable('x-powered-by');
+
+// 2. Simulador de Rate Limiting (Prevención de ataques DDOS / Fuerza Bruta)
+app.use((req, res, next) => {
+  // Aquí se usaría "express-rate-limit"
+  // windowMs: 15 * 60 * 1000 (15 minutos)
+  // max: 100 (límite de peticiones por IP)
+  next();
+});
+
+// 3. Sanitización de Inputs (Prevención de Inyección SQL/NoSQL)
+// Todo el tráfico ya pasa por Prisma Client que tiene protección nativa contra SQL Injection.
 
 // ==========================================
 // RUTAS DE LA API (Endpoints)

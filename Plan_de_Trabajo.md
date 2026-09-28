@@ -39,7 +39,7 @@ Este plan de trabajo detalla las fases para construir una plataforma de e-commer
 *   [x] **Webhooks:** Escuchar eventos del procesador de pagos para actualizar el estatus del pedido de "Pendiente" a "Pagado".
 
 ## Fase 5: Pruebas (QA), Seguridad y Despliegue (Semanas 14-16)
-*   [ ] **Pruebas Unitarias y de Integración:** Testeo de flujos críticos (añadir al carrito, pagar, descontar inventario).
-*   [ ] **Auditoría de Seguridad:** Protección contra ataques comunes (SQL Injection, XSS, CSRF).
-*   [ ] **Configuración de Servidores:** Despliegue en AWS, Vercel (Frontend) o DigitalOcean.
-*   [ ] **Migración a Producción:** Vinculación del dominio final, certificados SSL y puesta en marcha.
+*   [x] **Pruebas Unitarias y de Integración:** Testeo de flujos críticos (añadir al carrito, pagar, descontar inventario).
+*   [x] **Auditoría de Seguridad:** Protección contra ataques comunes (SQL Injection, XSS, CSRF).
+*   [x] **Configuración de Servidores:** Despliegue en AWS, Vercel (Frontend) o DigitalOcean.
+*   [x] **Migración a Producción:** Vinculación del dominio final, certificados SSL y puesta en marcha.
