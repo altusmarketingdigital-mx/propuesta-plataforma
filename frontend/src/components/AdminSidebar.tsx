@@ -48,6 +48,11 @@ export default function AdminSidebar() {
           <div className="flex items-center"><span className="mr-3">🚚</span> Logística y Envíos</div>
           <span className="border border-blue-300 text-blue-600 text-[10px] px-1.5 rounded-full font-bold">Nuevo</span>
         </Link>
+        
+        <Link href="/admin/pagos" className={`flex items-center justify-between px-6 py-2.5 hover:bg-gray-50 mt-1 ${isActive('/admin/pagos') ? 'bg-blue-50 text-blue-700 font-bold' : ''}`}>
+          <div className="flex items-center"><span className="mr-3">💳</span> Pagos y Ligas</div>
+          <span className="border border-green-300 text-green-600 text-[10px] px-1.5 rounded-full font-bold">Activo</span>
+        </Link>
 
         <div className="px-6 py-3 mt-4 text-xs font-semibold text-gray-500 uppercase tracking-wider">Canales de venta</div>
         <Link href="/" target="_blank" className="flex items-center justify-between px-6 py-2.5 hover:bg-gray-50">
