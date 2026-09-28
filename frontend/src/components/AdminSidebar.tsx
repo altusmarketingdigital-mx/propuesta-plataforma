@@ -54,9 +54,9 @@ export default function AdminSidebar() {
           <div className="flex items-center"><span className="mr-3">🏪</span> Tienda en línea</div>
           <span className="text-gray-400">↗</span>
         </Link>
-        <Link href="#" className="flex items-center justify-between px-6 py-2.5 hover:bg-gray-50">
+        <Link href="/admin/pos" className={`flex items-center justify-between px-6 py-2.5 hover:bg-gray-50 ${isActive('/admin/pos') ? 'bg-blue-50 text-blue-700 font-bold' : ''}`}>
           <div className="flex items-center"><span className="mr-3">🖥️</span> Punto de Venta</div>
-          <span className="text-gray-400">↗</span>
+          <span className="border border-green-300 text-green-600 text-[10px] px-1.5 rounded-full font-bold">Activo</span>
         </Link>
       </nav>
     </aside>
