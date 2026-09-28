@@ -1,9 +1,32 @@
+'use client';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { useState } from 'react';
+import { useCart } from '@/context/CartContext';
 
 export default function ProductPage({ params }: { params: { slug: string } }) {
-  // En producción, buscaríamos el producto por "slug" en la base de datos
+  const { addToCart } = useCart();
+  const [selectedSize, setSelectedSize] = useState('M');
+  const [selectedColor, setSelectedColor] = useState('Blanco');
+  const [isAdded, setIsAdded] = useState(false);
+  
   const productName = params.slug.replace(/-/g, ' ').toUpperCase();
+  const price = 950.00;
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: params.slug,
+      name: productName,
+      price: price,
+      quantity: 1,
+      image: 'https://picsum.photos/id/1011/200/300',
+      size: selectedSize,
+      color: selectedColor
+    });
+    
+    setIsAdded(true);
+    setTimeout(() => setIsAdded(false), 2000);
+  };
 
   return (
     <main className="min-h-screen flex flex-col bg-brand-white">
@@ -30,15 +53,15 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             <h1 className="text-2xl md:text-3xl font-heading font-bold text-brand-carbon mb-2">
               {productName}
             </h1>
-            <p className="text-xl font-bold text-brand-carbon mb-6">$950.00 MXN</p>
+            <p className="text-xl font-bold text-brand-carbon mb-6">${price.toFixed(2)} MXN</p>
 
             {/* Selector de Color */}
             <div className="mb-6">
-              <span className="text-sm font-semibold block mb-3">Color: <span className="font-normal text-gray-500">Blanco</span></span>
+              <span className="text-sm font-semibold block mb-3">Color: <span className="font-normal text-gray-500">{selectedColor}</span></span>
               <div className="flex gap-3">
-                <button className="w-8 h-8 rounded-full bg-white border-2 border-brand-carbon ring-2 ring-offset-1 ring-transparent"></button>
-                <button className="w-8 h-8 rounded-full bg-black border border-gray-300"></button>
-                <button className="w-8 h-8 rounded-full bg-brand-accent border border-gray-300"></button>
+                <button onClick={() => setSelectedColor('Blanco')} className={`w-8 h-8 rounded-full bg-white border border-gray-300 ${selectedColor === 'Blanco' ? 'ring-2 ring-brand-carbon ring-offset-2' : ''}`}></button>
+                <button onClick={() => setSelectedColor('Negro')} className={`w-8 h-8 rounded-full bg-black border border-gray-300 ${selectedColor === 'Negro' ? 'ring-2 ring-brand-carbon ring-offset-2' : ''}`}></button>
+                <button onClick={() => setSelectedColor('Menta')} className={`w-8 h-8 rounded-full bg-brand-accent border border-gray-300 ${selectedColor === 'Menta' ? 'ring-2 ring-brand-carbon ring-offset-2' : ''}`}></button>
               </div>
             </div>
 
@@ -50,7 +73,11 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
               </div>
               <div className="grid grid-cols-5 gap-2">
                 {['XS', 'S', 'M', 'L', 'XL'].map((size) => (
-                  <button key={size} className="border border-gray-300 py-3 flex items-center justify-center text-sm font-medium hover:border-brand-carbon transition-colors">
+                  <button 
+                    key={size} 
+                    onClick={() => setSelectedSize(size)}
+                    className={`border py-3 flex items-center justify-center text-sm font-medium transition-colors ${selectedSize === size ? 'border-brand-carbon bg-brand-carbon text-white' : 'border-gray-300 hover:border-brand-carbon'}`}
+                  >
                     {size}
                   </button>
                 ))}
@@ -58,8 +85,11 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
             </div>
 
             {/* Botón de Compra */}
-            <button className="w-full bg-brand-carbon text-white font-bold py-4 uppercase tracking-widest hover:bg-black transition-colors mb-4">
-              Agregar al Carrito
+            <button 
+              onClick={handleAddToCart}
+              className={`w-full font-bold py-4 uppercase tracking-widest transition-colors mb-4 ${isAdded ? 'bg-brand-accent text-brand-carbon' : 'bg-brand-carbon text-white hover:bg-black'}`}
+            >
+              {isAdded ? '✓ Agregado' : 'Agregar al Carrito'}
             </button>
             <p className="text-xs text-center text-gray-500 mb-8">Envío y devoluciones gratis en pedidos sobre $2,500 MXN</p>
 
