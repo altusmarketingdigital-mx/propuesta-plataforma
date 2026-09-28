@@ -8,8 +8,8 @@ export default function AdminLogin() {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     // En producción aquí se haría el POST al backend (/api/auth/login)
-    // Para la demo, redirigimos directamente al panel de productos
-    router.push('/admin/productos');
+    // Para la demo, redirigimos directamente al panel de inicio
+    router.push('/admin/inicio');
   };
 
   return (
