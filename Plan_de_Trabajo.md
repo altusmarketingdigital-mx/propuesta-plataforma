@@ -14,7 +14,7 @@ Este plan de trabajo detalla las fases para construir una plataforma de e-commer
 
 ## Fase 1: Arquitectura y Diseño UI/UX (Semanas 1-3)
 *   [x] **Modelado de Base de Datos:** Diseño de esquemas (Usuarios, Productos, Variantes, Pedidos, Direcciones).
-*   [ ] **Wireframing y Prototipado:** Diseño de interfaces en Figma (Home, Categorías, Ficha de Producto, Carrito, Checkout).
+*   [x] **Wireframing y Prototipado:** Diseño de interfaces en Figma (Home, Categorías, Ficha de Producto, Carrito, Checkout). *[Nota: Realizado directamente en código Next.js para agilizar demo]*
 *   [x] **Definición de API:** Estructuración de los *endpoints* REST o GraphQL que conectarán el front con el back.
 *   [x] **Configuración de Repositorios:** Creación de repositorios en GitHub/GitLab para Front, Back y Admin.
 

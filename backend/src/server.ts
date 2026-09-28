@@ -20,9 +20,11 @@ app.use(express.json()); // Permitir que la API reciba datos en formato JSON
 // ==========================================
 import productRoutes from './routes/product.routes';
 import authRoutes from './routes/auth.routes';
+import orderRoutes from './routes/order.routes';
 
 app.use('/api/products', productRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/orders', orderRoutes);
 
 // Rutas de prueba (Healthcheck)
 app.get('/api/health', (req: Request, res: Response) => {
