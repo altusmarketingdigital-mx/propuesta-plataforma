@@ -63,10 +63,66 @@ export default function CheckoutPage() {
             <input type="tel" placeholder="Teléfono" className="w-full border border-gray-300 rounded p-3 text-sm focus:outline-none focus:border-brand-carbon" />
           </div>
 
-          <div className="flex flex-col-reverse sm:flex-row justify-between items-center gap-4 pt-4 border-t border-gray-200">
+          {/* Selección de Envío */}
+          <div className="mb-8 pt-6 border-t border-gray-200">
+            <h2 className="text-lg font-bold text-brand-carbon mb-4">Método de envío (Cotizador en tiempo real)</h2>
+            <div className="space-y-3">
+              <label className="flex items-center justify-between p-4 border border-brand-carbon rounded bg-gray-50 cursor-pointer">
+                <div className="flex items-center gap-3">
+                  <input type="radio" name="shipping" defaultChecked className="text-brand-carbon focus:ring-brand-carbon" />
+                  <span className="font-medium text-sm">Estafeta - Terrestre (3-5 días)</span>
+                </div>
+                <span className="font-bold text-sm">$120.00</span>
+              </label>
+              <label className="flex items-center justify-between p-4 border border-gray-200 rounded hover:bg-gray-50 cursor-pointer transition-colors">
+                <div className="flex items-center gap-3">
+                  <input type="radio" name="shipping" className="text-brand-carbon focus:ring-brand-carbon" />
+                  <span className="font-medium text-sm">FedEx - Express (Día siguiente)</span>
+                </div>
+                <span className="font-bold text-sm">$250.00</span>
+              </label>
+            </div>
+          </div>
+
+          {/* Pago Seguro */}
+          <div className="mb-8 pt-6 border-t border-gray-200">
+            <h2 className="text-lg font-bold text-brand-carbon mb-4">Pago seguro</h2>
+            <p className="text-sm text-gray-500 mb-4">Todas las transacciones son seguras y están encriptadas.</p>
+            
+            <div className="border border-gray-200 rounded overflow-hidden">
+              {/* Mercado Pago */}
+              <label className="flex items-center justify-between p-4 border-b border-gray-200 bg-gray-50 cursor-pointer">
+                <div className="flex items-center gap-3">
+                  <input type="radio" name="payment" defaultChecked className="text-brand-carbon focus:ring-brand-carbon" />
+                  <span className="font-medium text-sm">Tarjetas de Crédito / Débito (Mercado Pago)</span>
+                </div>
+                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded font-bold">MercadoPago</span>
+              </label>
+              
+              {/* Campos de Tarjeta Mock */}
+              <div className="p-4 bg-gray-50 border-b border-gray-200 space-y-4">
+                <input type="text" placeholder="Número de tarjeta" className="w-full border border-gray-300 rounded p-3 text-sm focus:outline-none focus:border-brand-carbon" />
+                <div className="grid grid-cols-2 gap-4">
+                  <input type="text" placeholder="Vencimiento (MM/AA)" className="w-full border border-gray-300 rounded p-3 text-sm focus:outline-none focus:border-brand-carbon" />
+                  <input type="text" placeholder="Código de seguridad" className="w-full border border-gray-300 rounded p-3 text-sm focus:outline-none focus:border-brand-carbon" />
+                </div>
+              </div>
+
+              {/* PayPal */}
+              <label className="flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50 transition-colors">
+                <div className="flex items-center gap-3">
+                  <input type="radio" name="payment" className="text-brand-carbon focus:ring-brand-carbon" />
+                  <span className="font-medium text-sm">PayPal</span>
+                </div>
+                <span className="text-xs bg-blue-800 text-white px-2 py-1 rounded font-bold italic">PayPal</span>
+              </label>
+            </div>
+          </div>
+
+          <div className="flex flex-col-reverse sm:flex-row justify-between items-center gap-4 pt-6 border-t border-gray-200">
             <Link href="/carrito" className="text-brand-accent hover:underline text-sm font-medium">&lt; Volver al carrito</Link>
-            <button type="button" className="w-full sm:w-auto bg-brand-carbon text-white font-bold py-4 px-8 uppercase tracking-wider hover:bg-black transition-colors rounded shadow-md">
-              Continuar con envíos
+            <button type="button" className="w-full sm:w-auto bg-brand-carbon text-white font-bold py-4 px-12 uppercase tracking-wider hover:bg-black transition-colors rounded shadow-md">
+              Pagar $1,820.00
             </button>
           </div>
         </form>

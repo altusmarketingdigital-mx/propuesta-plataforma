@@ -32,11 +32,11 @@ Este plan de trabajo detalla las fases para construir una plataforma de e-commer
 *   [x] **Optimización Core Web Vitals:** Ajustes de velocidad de carga y SEO técnico (Server-Side Rendering con Next.js).
 
 ## Fase 4: Integración de Pagos y Logística (Semanas 10-13)
-*   [ ] **Checkout Custom:** Flujo de captura de dirección de envío y facturación.
-*   [ ] **Integración Mercado Pago (API):** Procesamiento de pagos con tarjeta de crédito/débito y generación de tokens de pago seguro.
-*   [ ] **Integración PayPal (API):** Botón de pago rápido.
-*   [ ] **Cálculo de Envíos:** Conexión con la API de Skydropx o Envia.com para cotizar envíos en tiempo real y generar guías automáticamente al confirmar el pago.
-*   [ ] **Webhooks:** Escuchar eventos del procesador de pagos para actualizar el estatus del pedido de "Pendiente" a "Pagado".
+*   [x] **Checkout Custom:** Flujo de captura de dirección de envío y facturación.
+*   [x] **Integración Mercado Pago (API):** Procesamiento de pagos con tarjeta de crédito/débito y generación de tokens de pago seguro.
+*   [x] **Integración PayPal (API):** Botón de pago rápido.
+*   [x] **Cálculo de Envíos:** Conexión con la API de Skydropx o Envia.com para cotizar envíos en tiempo real y generar guías automáticamente al confirmar el pago.
+*   [x] **Webhooks:** Escuchar eventos del procesador de pagos para actualizar el estatus del pedido de "Pendiente" a "Pagado".
 
 ## Fase 5: Pruebas (QA), Seguridad y Despliegue (Semanas 14-16)
 *   [ ] **Pruebas Unitarias y de Integración:** Testeo de flujos críticos (añadir al carrito, pagar, descontar inventario).
