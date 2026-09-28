@@ -9,9 +9,9 @@ export default function AdminSidebar() {
 
   return (
     <aside className="w-64 bg-white border-r border-gray-200 hidden md:flex md:flex-col min-h-screen text-gray-700">
-      <div className="p-4 border-b border-gray-200 flex items-center gap-2">
-        <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold">tn</div>
-        <span className="font-bold text-lg text-blue-600">tiendanube</span>
+      <div className="p-4 border-b border-gray-200 flex items-center gap-2 bg-brand-carbon text-white">
+        <div className="w-8 h-8 bg-brand-accent rounded-full flex items-center justify-center text-brand-carbon font-extrabold text-sm tracking-tighter">TS</div>
+        <span className="font-bold text-lg tracking-widest uppercase">TribuSport</span>
       </div>
 
       <nav className="flex-1 overflow-y-auto py-4 text-sm font-medium">
@@ -45,7 +45,7 @@ export default function AdminSidebar() {
         </div>
 
         <Link href="#" className="flex items-center justify-between px-6 py-2.5 hover:bg-gray-50 mt-2">
-          <div className="flex items-center"><span className="mr-3">🚚</span> Envío Nube</div>
+          <div className="flex items-center"><span className="mr-3">🚚</span> Logística y Envíos</div>
           <span className="border border-blue-300 text-blue-600 text-[10px] px-1.5 rounded-full font-bold">Nuevo</span>
         </Link>
 
